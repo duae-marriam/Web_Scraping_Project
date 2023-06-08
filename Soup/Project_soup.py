@@ -5,11 +5,14 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-
+#we are using 6 links enough to get 100 webpages which we will be scrapping information from
 url = ['https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=1','https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=2','https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=3','https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=4','https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=5','https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&page=6']
+
+#Empty lists to be filled with scrapped info
 
 phone_links = []
 phone_specs =[]
+
 for i in url:
     try:
         response = requests.get(i)
@@ -22,7 +25,10 @@ for i in url:
 
             herf = str('https://www.flipkart.com'+phone.find('a')['href'])
             phone_links.append(herf)
-            # print(herf)
+            
+            #creating a scrapper for each page and extracting info
+            response2 = requests.get(herf)
+            soup2 = BeautifulSoup(response.content, 'html.parser')
 
 
 
@@ -37,7 +43,7 @@ for i in url:
             Processor = phone.find('li', {'class': 'rgWa7D'}).find_next_sibling().find_next_sibling().find_next_sibling().find_next_sibling().text
             Warranty = phone.find('li', {'class': 'rgWa7D'}).find_next_sibling().find_next_sibling().find_next_sibling().find_next_sibling().find_next_sibling().text
 
-            #this line of code can be adjusted to bring the data in which ever format we like. I am joining them so i can easily output a text file out of it.
+            
             phone_specs.append(', '.join([item[0] for item in [name, price, rating]])+ Memory+Screen+ Camera+ Battery+Warranty+Processor)
     except:
         print('error here')
@@ -51,4 +57,5 @@ df = pd.DataFrame(phone_specs)
 
 # Export the DataFrame phone_specs as a text file
 df.to_csv('Phone specs.txt', sep='\t', index=False)
+
 
