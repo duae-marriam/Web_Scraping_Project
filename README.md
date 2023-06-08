@@ -7,6 +7,7 @@ https://docs.google.com/document/d/15_6DpmbG29Iv1Ttwfo_zGYjj6Xtns6keppAzZzXaVD0/
 
 ## Project Presentation-video about how to run these 3 scrapers
 
+
 ## How to run？（text version）
 ### BeautifulSoup
 
@@ -22,6 +23,6 @@ To run Scrapy using the command line, follow these steps:
 
 4. Scrapy will start executing the spider, sending requests, and processing the responses. You will see the log messages and output in the terminal/command prompt.
 
-5. You can also use additional options with the scrapy crawl command to customize the behavior of the spider:
+5. You can also use additional options with the "scrapy crawl" command to customize the behavior of the spider:
 
-    -o output.json or -o output.csv: Use these options to specify the output format for the scraped data. You can choose to save the data in JSON  or CSV format. For example:scrapy crawl myspider -o output.csv
+    "-o output.json" or "-o output.csv" : Use these options to specify the output format for the scraped data. You can choose to save the data in JSON  or CSV format. For example:  "scrapy crawl myspider -o output.csv"
