@@ -11,6 +11,9 @@ https://docs.google.com/document/d/15_6DpmbG29Iv1Ttwfo_zGYjj6Xtns6keppAzZzXaVD0/
 ## How to run？（text version）
 ### BeautifulSoup
 
+For running the code of Beautiful Soup Scrapper,  One only needs to run the code in console of any IDE.
+However, it is important to note that the code requires installation of nesessary libraries to work for BeautifulSoup.
+
 ### Scrapy
 
 To run Scrapy using the command line, follow these steps:
