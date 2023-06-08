@@ -26,3 +26,9 @@ To run Scrapy using the command line, follow these steps:
 5. You can also use additional options with the "scrapy crawl" command to customize the behavior of the spider:
 
     "-o output.json" or "-o output.csv" : Use these options to specify the output format for the scraped data. You can choose to save the data in JSON  or CSV format. For example:  "scrapy crawl myspider -o output.csv"
+
+### Selenium
+
+1. Running code immediately in Pycharm or other Idea ,and following step is automatic.
+2. make sure that you have install package  selenium,time,csv
+3. finally the output will be a .csv document.
