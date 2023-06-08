@@ -29,6 +29,14 @@ To run Scrapy using the command line, follow these steps:
 
 ### Selenium
 
-1. Running code immediately in Pycharm or other Idea ,and following step is automatic.
-2. make sure that you have install package  selenium,time,csv
-3. finally the output will be a .csv document.
+1. Install Selenium: Use pip to install the Selenium package by running the following command:pip install selenium
+
+2. Download a WebDriver: Chrome: ChromeDriver (https://sites.google.com/a/chromium.org/chromedriver/downloads)
+
+3. Running existed Selenium script in project (process include :Create a WebDriver instance,Interact with web elements,Perform actions: Use the WebDriver's methods to perform actions,Close the WebDriver)
+
+4. Finally the output will be a .csv document.
+
+5. ###Ensure that the WebDriver executable is accessible and the necessary browser is installed on your system. also you have install package  selenium,time,csv###
+
+   
