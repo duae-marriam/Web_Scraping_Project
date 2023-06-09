@@ -6,7 +6,7 @@ Our project aims to create a comprehensive mobile phone dataset by scraping data
 https://docs.google.com/document/d/15_6DpmbG29Iv1Ttwfo_zGYjj6Xtns6keppAzZzXaVD0/edit?fbclid=IwAR1cM_bS0ElPo-OVLZ4HyDnxeIvxUToLaiEJ9EadI4Ch7yRPohdJl7nUKKg
 
 ## Project Presentation-video about how to run these 3 scrapers
-
+https://drive.google.com/file/d/1IDuQFqTQLjTiLvi3I_dyEjL9Ypt6vHGj/view
 
 ## How to run？（text version）
 ### BeautifulSoup
