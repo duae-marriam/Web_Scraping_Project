@@ -10,6 +10,18 @@ https://docs.google.com/document/d/15_6DpmbG29Iv1Ttwfo_zGYjj6Xtns6keppAzZzXaVD0/
 
 ## How to run？（text version）
 ### BeautifulSoup
+To run Beautiful Soup, you need to follow these steps:
+
+1. Install Beautiful Soup: Open your terminal or command prompt and run the following command to install Beautiful Soup using pip.
+
+2. Import Beautiful Soup: In your Python script or interactive session
+
+3. Retrieve HTML: Obtain the HTML content you want to parse. You can retrieve it from a website using various methods such as using the requests library or reading from a local HTML file.
+
+4. Create a Beautiful Soup object: Once you have the HTML content, create a Beautiful Soup object by passing the HTML content and a parser type to the BeautifulSoup constructor. The parser type specifies how Beautiful Soup should parse the HTML. 
+
+5. Parse and extract data: You can now use Beautiful Soup to parse the HTML and extract the desired data. Beautiful Soup provides various methods and techniques to navigate and search the HTML tree structure. 
+
 
 ### Scrapy
 
